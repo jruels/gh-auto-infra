@@ -45,7 +45,7 @@
 - Click "Create bucket"
 - Create a globally unique bucket name by adding your username or another unique identifier
   (e.g., `my-terraform-state-bucket-johndoe123`)
-- Select region "us-east-1"
+- Region should be "us-west-1"
 - Keep all other settings as default
 - Click "Create bucket"
 - If you get an error that the bucket name already exists, try a different unique suffix
@@ -65,14 +65,14 @@
   ```
 
 #### Update Backend Configuration
-- Open main/backend.tf
+- Open labs/gh-actions/main/backend.tf
 - Update the bucket name to match your created bucket:
   ```hcl
   terraform {
     backend "s3" {
       bucket = "your-actual-bucket-name"
       key    = "dev/terraform.tfstate"
-      region = "us-east-1"
+      region = "us-west-1"
     }
   }
   ```
