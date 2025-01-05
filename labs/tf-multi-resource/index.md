@@ -29,6 +29,8 @@ The configuration in `main.tf` defines a web application, including a VPC, load 
 
 Review the configuration files, and pay attention to the resources being created and their hard-coded values.
 
+### Note: Be sure to go back to the AWS access portal, refresh the page and re-copy your access keys as they will have expired.
+
 Initialize this configuration.
 ```sh
 terraform init
