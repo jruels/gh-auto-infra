@@ -2,8 +2,9 @@ name: 'Terraform AWS Pipeline'
 
 on:
   push:
-    branches: [ "feature/**" ]
-    branches: [ "control-tower/**" ]
+    branches: 
+      - "feature/**" 
+      - "control-tower/**" ]
   workflow_dispatch:
 
 permissions:
