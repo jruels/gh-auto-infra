@@ -2,12 +2,10 @@
 
 ### Part 1: Initial Setup and Configuration
 
-#### Generate AWS Access Keys
-- Log into AWS Console
-- Go to IAM → Users → Your User
-- Click "Security credentials" tab
-- Click "Create access key"
-- Save both the Access Key ID and Secret Access Key
+#### Refresh AWS Access Keys
+- Return to the AWS access portal
+- Refresh the page
+- Copy the updated Access keys
 
 #### Fork the Repository
 - Go to the repository page
@@ -27,6 +25,9 @@
   
   Name: AWS_SECRET_ACCESS_KEY
   Value: (your secret key from step 3)
+
+  Name: AWS_SESSION_TOKEN
+  Value: (your session token from step 3)
   ```
 
 #### Create GitHub Environment
