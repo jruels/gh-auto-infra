@@ -53,7 +53,7 @@
    ```powershell
    choco install git -y
    ```
-2. After installation, confirm that the package works (e.g., `git --version`).
+2. After installation, restart VS Code as Administrator and confirm that the package works (e.g., `git --version`).
 
 ---
 
