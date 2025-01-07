@@ -87,6 +87,12 @@ You can optional specify a `profile` attribute in your provider block. This attr
 
 **NOTE:** You should NEVER hard-code credentials into your `*.tf` files. 
 
+* Go to the [AWS access portal](https://d-91672d0af2.awsapps.com/start)
+* Click on your Account Name `SnowflakeXXX`
+* Click on Access Keys
+* Copy Option 1 under moacOS and Linux
+* Paste into the terminal window in VS Code
+
 ## Resources 
 The `resource` block defines infrastructure you want to create. This resource can be can be a physical component like an EC2 instance, GCP VM, or VMware machine, or it can be logical like a Heroku application. 
 
