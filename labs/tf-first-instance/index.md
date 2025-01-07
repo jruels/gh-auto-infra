@@ -6,7 +6,7 @@ This lab walks through setting up Terraform and creating your first resources.
 ## Install Terraform 
 Create and enter the working directory:
 ```sh
-mkdir -p $HOME/$(date +%Y%m%d)/terraform
+mkdir -p $HOME/labs/$(date +%Y%m%d)/terraform
 cd $_
 ```
 Install Terraform for Windows. To install the latest version run the following: 
