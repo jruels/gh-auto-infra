@@ -71,31 +71,6 @@ choco install wget -y
 choco install awscli -y
 ```
 
-## Install Terraform
-#### Get binaries ####
-#### Close and Reopen Visual Studio Code
-#### Open a Bash terminal
-#### Get the latest Terraform version from GitHub API
-
-``` bash
-TER_VER=$(curl -s https://api.github.com/repos/hashicorp/terraform/releases/latest | grep tag_name | cut -d: -f2 | tr -d \"\, | awk '{$1=$1};1' | sed 's/^v//')
-```
-#### Download the Terraform ZIP file for Windows
-``` bash
-wget --no-check-certificate https://releases.hashicorp.com/terraform/${TER_VER}/terraform_${TER_VER}_windows_amd64.zip -O terraform.zip
-```
-#### unzip
-``` bash
-powershell -Command "Expand-Archive -Path terraform.zip -DestinationPath ."
-```
-#### delete the zip
-``` bash
-rm terraform.zip
-```
-#### Move the exe to the System32 folder which is already in the path
-``` bash
-mv terraform.exe /c/Windows/System32
-```
 # Install GitHub actions for VSCode
 
 ### **Step 1: Open Visual Studio Code**
