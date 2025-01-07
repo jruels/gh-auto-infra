@@ -1,9 +1,5 @@
 # Lab Setup 
-On the provided Windows VM, download the GitHub repository. 
-Go to the [repo](https://github.com/jruels/gh-auto-infra.git) in a browser, and in the top right corner, click the green "Code" button, then click "Download as zip". 
-Once the download is done, extract the zip file and put it somewhere you can easily access it.
-
-
+On the provided Windows VM, if you have not already done so clone the [repo](https://github.com/jruels/gh-auto-infra.git) to the labs folder.
 
 ## Set up Putty
 
@@ -15,7 +11,7 @@ Open Putty and configure a new session for each of the Ansible VMs.
 
 
 
-Expand Connection -> SSH -> Auth -> Credentials, click "Browse", and then choose the `lab.ppk` file from the `gh-auto-infra/keys` directory
+Expand Connection -> SSH -> Auth -> Credentials, click "Browse", and then choose the `lab.ppk` file from the `labs/gh-auto-infra/keys` directory
 
 ![image-20230918185300995](images/putty-auth.png)
 
@@ -35,7 +31,7 @@ The username for SSH is `ubuntu`
 On each node, install Ansible using pip
 
 ```bash
-sudo pip3 install ansible
+sudo apt install ansible
 ```
 
 Confirm ansible was installed successfully. 
@@ -59,9 +55,6 @@ ansible [core 2.13.13]
 ```
 
 
-
-
-
 ## Configure the `ansible` user on all the nodes
 
 Add a new `ansible` user to each node. This user will be used for running `ansible` tasks. 
@@ -71,7 +64,6 @@ On each node run:
 ```
 sudo useradd -m -s /bin/bash ansible
 ```
-
 
 
 ## Configure `sudo` Access for the ansible user
@@ -89,7 +81,6 @@ ansible    ALL=(ALL)       NOPASSWD: ALL
 ```
 
 
-
 ## Configure SSH for ansible user
 
 Configure the `ansible` user on the control node for SSH shared key access to the managed nodes.
@@ -102,7 +93,6 @@ Create a key pair for the `ansible` user on the control host, accepting the defa
 sudo su - ansible
 ssh-keygen 
 ```
-
 
 
 #### Copy the public key to both nodes provided by the instructor:
