@@ -10,7 +10,18 @@ mkdir -p $HOME/labs/$(date +%Y%m%d)/terraform
 cd $_
 ```
 Install Terraform for Windows. To install the latest version run the following: 
+
+#### Using Chocolatey (easy)
+
+``` bash
+# VS Code must be in adminstrative mode
+choco install terraform
+```
+
+#### Using wget (specific)
+
 ```sh
+# VS Code does not need to be in adminstrative mode
 # Get the latest Terraform version from GitHub API
 TER_VER=$(curl -s https://api.github.com/repos/hashicorp/terraform/releases/latest | grep tag_name | cut -d: -f2 | tr -d \"\, | awk '{$1=$1};1' | sed 's/^v//')
 
