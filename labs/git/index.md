@@ -6,7 +6,12 @@ This lab gives more hands-on time with `git`. You will checkout specific commits
 
 ### Objectives
 
-* Create a directory named `git` and enter it. 
+* Launch VS Code
+* From the File menu Select Open Folder
+* Select New folder  (upper left)
+* Name the folder `labs`
+* Click Select Folder to select the labs folder
+* In VS Code create new Folder named `git` inside of the labs folder and enter it. 
 
 * Create `Hello.java` containing the following
 
