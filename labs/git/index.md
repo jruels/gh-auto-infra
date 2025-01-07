@@ -25,7 +25,7 @@ This lab gives more hands-on time with `git`. You will checkout specific commits
   }
   ```
 
-* Initialize a new repository
+* Initialize a new repository (git init)
 
 * Add the file to the repository, and commit it
 
