@@ -18,7 +18,7 @@
 - Go to your forked repository's Settings
 - Click "Secrets and variables" → "Actions"
 - Click "New repository secret"
-- Add two secrets:
+- Add three secrets:
   ```
   Name: AWS_ACCESS_KEY_ID
   Value: (your access key from step 3)
