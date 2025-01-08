@@ -5,9 +5,9 @@
       block:
         - get_url:
             url: https://bit.ly/3dtJtR7
-            dest: /home/ansible/ansible-error-handling/transaction_list
+            dest: /home/ansible/gh-auto-infra/labs/ansible-error-handling/transaction_list
         - replace:
-            path: /home/ansible/ansible-error-handling/transaction_list
+            path: /home/ansible/gh-auto-infra/labs/ansible-error-handling/transaction_list
             regexp: "#BLANKLINE"
             replace: '\n'
         - debug: msg="File downloaded"
