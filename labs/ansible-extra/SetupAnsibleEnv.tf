@@ -4,7 +4,7 @@ provider "aws" {
 
 variable "number_of_students" {
   description = "Number of students"
-  default     = 2   
+  default     = 1   
 }
 
 variable "base_ami" {
