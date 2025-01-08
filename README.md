@@ -20,7 +20,7 @@ Lab 2: [Intro to Terraform](labs/tf-first-instance)
 Lab 3: [Intro to Ansible](labs/ansible-setup/)   
 
 ### Day 2   
-Lab 4: [Provision Infrastructure with Terraform](labs/tf-multi-resource/)   
+Lab 4: [Terraform Variables and Parameters](labs/tf-multi-resource/)   
 Lab 5: [Ansible Playbook Error Handling](labs/ansible-error-handling)   
 Lab 6: [GitHub Actions Pipeline](labs/gh-actions)   
 
