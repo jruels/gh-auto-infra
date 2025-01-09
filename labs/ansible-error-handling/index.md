@@ -17,7 +17,7 @@ In this lab, we will explore how to handle errors that may occur while running A
 
 On the Ansible Control Node:
 
-1. If you havent already done so, clone the gh-auto-infra repo.
+1. If you havent already done so, clone the gh-auto-infra repo to the home directory.
 2. Click `Pull` to get the latest updates from the repository.
 
 Edit report.yml in the vi editor:
@@ -41,7 +41,7 @@ First, we'll specify our **host** and **tasks** (**name**, and **debug** message
     - name: download transaction_list
       get_url:
         url: https://bit.ly/3dtJtR7
-        dest: /home/ansible/gh-auto-infra/labs/ansible-error-handling/transaction_list
+        dest: /home/ubuntu/gh-auto-infra/labs/ansible-error-handling/transaction_list
     - debug: msg="File downloaded"
 ```
 
@@ -57,7 +57,7 @@ We need to reconfigure a bit here, adding a **block** keyword and a **rescue**, 
       block:
         - get_url:
             url: https://bit.ly/3dtJtR7
-            dest: /home/gh-auto-infra/labs/ansible-error-handling/transaction_list
+            dest: /home/ubuntu/gh-auto-infra/labs/ansible-error-handling/transaction_list
         - debug: msg="File downloaded"
       rescue:
         - debug: msg="Site appears to be down.  Try again later."
@@ -75,7 +75,7 @@ An **always** block here will let us know that the playbook at least made an att
       block:
         - get_url:
             url: https://bit.ly/3dtJtR7
-            dest: /home/ansible/gh-auto-infra/labs/ansible-error-handling/transaction_list
+            dest: /home/ubuntu/gh-auto-infra/labs/ansible-error-handling/transaction_list
         - debug: msg="File downloaded"
       rescue:
         - debug: msg="Site appears to be down.  Try again later."
@@ -95,9 +95,9 @@ We can use the **replace** module for this task, and we'll sneak it in between t
       block:
         - get_url:
             url: https://bit.ly/3dtJtR7
-            dest: /home/ansible/gh-auto-infra/labs/ansible-error-handling/transaction_list
+            dest: /home/ubuntu/gh-auto-infra/labs/ansible-error-handling/transaction_list
         - replace:
-            path: /home/ansible/gh-auto-infra/labs/ansible-error-handling/transaction_list
+            path: /home/ubuntu/gh-auto-infra/labs/ansible-error-handling/transaction_list
             regexp: "#BLANKLINE"
             replace: '\n'
         - debug: msg="File downloaded"
@@ -114,7 +114,7 @@ We can use the **replace** module for this task, and we'll sneak it in between t
 Enter the `error-handling` directory
 
 ```bash
-cd /home/ansible/gh-auto-infra/labs/ansible-error-handling
+cd /home/ubuntu/gh-auto-infra/labs/ansible-error-handling
 ```
 
 Run the playbook
@@ -126,7 +126,7 @@ ansible-playbook report.yml
 If all went well, we can read the downloaded text file:
 
 ```
-cat /home/ansible/gh-auto-infra/labs/ansible-error-handling/transaction_list
+cat /home/ubuntu/gh-auto-infra/labs/ansible-error-handling/transaction_list
 ```
 
 After confirming the playbook successfully downloads and updates the `transaction_list` file, run the `break_stuff.yml` playbook in the `maint` directory to simulate an unreachable host. 
