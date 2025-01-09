@@ -68,7 +68,7 @@ sudo useradd -m -s /bin/bash ansible
 
 ## Configure `sudo` Access for the ansible user
 
-Now, we'll configure sudo access for Ansible on `managed node1` and `managed node2` such that Ansible may use `sudo` for any command with no password prompt.
+Now, we'll configure sudo access for Ansible on all nodes `control node`, `managed node1` and `managed node2` such that Ansible may use `sudo` for any command with no password prompt.
 
 ```
 sudo visudo 
