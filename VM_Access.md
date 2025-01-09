@@ -1,12 +1,12 @@
-| Name                     | Username    | Virtual Machine Password | Virtual Machine Portal                  |
-|--------------------------|-------------|--------------------------|----------------------------------------|
-| Nhung Tran               | WNS2022-21  | TEKwns2022!              | [https://html.inspiredvlabs.com/](https://html.inspiredvlabs.com/) |
-| Dave Supenski            | WNS2022-22  | TEKwns2022!              |                                        |
-| Ray Baldenegro           | WNS2022-23  | TEKwns2022!              |                                        |
-| Mike Morris              | WNS2022-24  | TEKwns2022!              |                                        |
-| Maximilian Francis       | WNS2022-25  | TEKwns2022!              |                                        |
-| Diego Aguero             | WNS2022-26  | TEKwns2022!              |                                        |
-| Bob Newman               | WNS2022-27  | TEKwns2022!              |                                        |
-| Anthony Squire           | WNS2022-28  | TEKwns2022!              |                                        |
-| Royce Taylor             | WNS2022-29  | TEKwns2022!              |                                        |
-| *Instructor*             | WNS2022-30  | TEKwns2022!              |                                        |
+| Name                | Username    | Virtual Machine Password | Virtual Machine Portal                  |
+|---------------------|-------------|--------------------------|----------------------------------------|
+| Debbie Lang         | WNS2022-43  | TEKwns2022!              | [https://html.inspiredvlabs.com/](https://html.inspiredvlabs.com/) |
+| Nardo Mendoza       | WNS2022-44  | TEKwns2022!              |                                        |
+| Jaret Pemberton     | WNS2022-45  | TEKwns2022!              |                                        |
+| Eric Frese          | WNS2022-46  | TEKwns2022!              |                                        |
+| Edward Moeller      | WNS2022-47  | TEKwns2022!              |                                        |
+| Fred Barnhart       | WNS2022-48  | TEKwns2022!              |                                        |
+| Erik Dutton         | WNS2022-49  | TEKwns2022!              |                                        |
+| Matthew Beck        | WNS2022-50  | TEKwns2022!              |                                        |
+| Jeff Hatfield       | WNS2022-51  | TEKwns2022!              |                                        |
+| *Instructor*        | WNS2022-52  | TEKwns2022!              |                                        |
