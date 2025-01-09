@@ -185,7 +185,7 @@ cat Hello.java
 Return to the latest version 
 
 ```
-git checkout main
+git checkout master
 ```
 
 
