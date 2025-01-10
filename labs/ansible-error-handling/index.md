@@ -15,7 +15,7 @@ In this lab, we will explore how to handle errors that may occur while running A
 
 #### Prerequisites
 
-On the Ansible Control Node:
+On the Ansible Control Node login as ubuntu:
 
 1. If you havent already done so, clone the gh-auto-infra repo to the home directory.
 2. Click `Pull` to get the latest updates from the repository.
