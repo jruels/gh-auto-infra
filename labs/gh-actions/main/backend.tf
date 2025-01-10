@@ -3,7 +3,7 @@ terraform {
     bucket = "my-tf-state-bucket-erikdutton"
     key    = "terraform.tfstate"
     region = "us-west-1"
-  }
+  } 
 
   required_providers {
     aws = {
