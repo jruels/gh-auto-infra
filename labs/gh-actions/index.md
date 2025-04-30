@@ -18,16 +18,13 @@
 - Go to your forked repository's Settings
 - Click "Secrets and variables" → "Actions"
 - Click "New repository secret"
-- Add three secrets:
+- Add two secrets:
   ```
   Name: AWS_ACCESS_KEY_ID
   Value: (your access key from step 3)
   
   Name: AWS_SECRET_ACCESS_KEY
   Value: (your secret key from step 3)
-
-  Name: AWS_SESSION_TOKEN
-  Value: (your session token from step 3)
   ```
 
 #### Create GitHub Environment
