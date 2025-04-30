@@ -88,8 +88,12 @@
   git push -u origin feature/github-actions-lab
   ```
 - Go to the Actions tab in GitHub
-- Notice that no workflow is running yet - this is because there is no trigger configured for this branch.
+- Notice that no workflow is running yet - this is because the .github folder needs to be at the root of the repo and there is also no trigger configured for this branch.
 
+#### Move the .github folder to the repository root folder
+- from the repository root (the directory where you ran git clone)
+- cp -r labs/gh-actions/.github/. .github/
+  
 #### Configure Pipeline Trigger
 - Open `.github/workflows/terraform-plan-apply.yml`
 - Add feature branch trigger to the `on` section:
