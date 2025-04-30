@@ -107,49 +107,6 @@ choco install awscli -y
    - Once logged in, approve the VS Code GitHub authorization request.
 
 ---
-
-### **Step 6: Open a Repository with GitHub Actions**
-1. Open a repository that contains a `.github/workflows` directory, or create one if it doesn’t exist.
-   - This directory is where GitHub Actions workflows are stored.
-
----
-
-### **Step 7: Explore GitHub Actions Features**
-1. Once the extension is installed and authenticated, you can:
-   - View and manage workflows directly in VS Code.
-   - Debug or monitor workflow runs.
-   - Trigger workflows manually.
-2. Open the **Command Palette** (press `Ctrl + Shift + P` or `Cmd + Shift + P`) and type:
-   ```
-   GitHub Actions
-   ```
-   - Explore available commands like viewing workflows or logs.
-
----
-
-### **Step 8: Configure Workflows**
-1. If you don’t have workflows set up, you can use the extension to create new workflow files:
-   - Go to the **Explorer** view in VS Code.
-   - Right-click in the `.github/workflows` directory and select **New File**.
-   - Name the file (e.g., `ci.yml`) and define your workflow.
-2. The GitHub Actions extension can assist in validating and editing these files.
-
----
-
-### **Step 9: Verify the Installation**
-1. In the Extensions view, ensure the **GitHub Actions** extension is listed as **Installed**.
-2. In the Command Palette, type:
-   ```
-   GitHub Actions: View Workflow Logs
-   ```
-   - If successful, you’ll see a list of workflows and their logs.
-
----
-
-### **Step 10: Test a Workflow**
-1. Trigger a workflow from VS Code by navigating to the workflow file in the Explorer and selecting **Run Workflow** from the Actions menu.
-
----
 ## Download and Install the AWS CLI
 
 ### Step 1: Download the AWS CLI Installation file

@@ -18,16 +18,13 @@
 - Go to your forked repository's Settings
 - Click "Secrets and variables" → "Actions"
 - Click "New repository secret"
-- Add three secrets:
+- Add two secrets:
   ```
   Name: AWS_ACCESS_KEY_ID
   Value: (your access key from step 3)
   
   Name: AWS_SECRET_ACCESS_KEY
   Value: (your secret key from step 3)
-
-  Name: AWS_SESSION_TOKEN
-  Value: (your session token from step 3)
   ```
 
 #### Create GitHub Environment
@@ -88,8 +85,12 @@
   git push -u origin feature/github-actions-lab
   ```
 - Go to the Actions tab in GitHub
-- Notice that no workflow is running yet - this is because there is no trigger configured for this branch.
+- Notice that no workflow is running yet - this is because the .github folder needs to be at the root of the repo and there is also no trigger configured for this branch.
 
+#### Move the .github folder to the repository root folder
+- from the repository root (the directory where you ran git clone)
+- cp -r labs/gh-actions/.github/. .github/
+  
 #### Configure Pipeline Trigger
 - Open `.github/workflows/terraform-plan-apply.yml`
 - Add feature branch trigger to the `on` section:
