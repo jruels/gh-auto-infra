@@ -122,7 +122,7 @@ Git supports aliases, so you don't have to type the entire string.
 
 Here are some helpful aliases I use. 
 
-Add them in `~/.gitconfig` to make life easier.
+Add them in `~/.git/config` to make life easier.
 
 ```
 [alias]
